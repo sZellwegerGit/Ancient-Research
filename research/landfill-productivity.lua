@@ -1,12 +1,6 @@
-local technology_effect = {
-	type = "change-recipe-productivity",
-	recipe = "landfill",
-	change = 0.1
-}
-
 local landfill_productivity_research = {
 	type = "technology",
-	name = "landfill-productivity"
+	name = "landfill-productivity",
 	icons = {
 		{
 			icon = "__base__/graphics/technology/landfill.png",
@@ -19,10 +13,16 @@ local landfill_productivity_research = {
 			shift = {50, 50}
 		}
 	},
-	effects = technology_effect,
+	effects = {
+		{
+			type = "change-recipe-productivity",
+			recipe = "landfill",
+			change = 0.1
+		}
+	},
 	prerequisites = {
 		"concrete",
-		"agricultural-science-pack"
+		"agricultural-science-pack",
 		"space-science-pack"
 	},
 	unit = {
@@ -33,7 +33,8 @@ local landfill_productivity_research = {
 			{"chemical-science-pack", 1},
 			{"utility-science-pack", 1},
 			{"production-science-pack", 1},
-			{"space-science-pack", 1}
+			{"space-science-pack", 1},
+			{"agricultural-science-pack", 1}
 		},
 		time = 30
 	},
@@ -41,4 +42,4 @@ local landfill_productivity_research = {
 	upgrade = true
 }
 
-data:extend(landfill_productivity_research)
+data:extend({landfill_productivity_research})
