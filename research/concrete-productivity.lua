@@ -1,9 +1,9 @@
-local landfill_productivity_research = {
+local concrete_productivity_research = {
 	type = "technology",
-	name = "landfill-productivity",
+	name = "concrete-productivity",
 	icons = {
 		{
-			icon = "__base__/graphics/technology/landfill.png",
+			icon = "__base__/graphics/technology/concrete.png",
 			icon_size = 256
 		},
 		{
@@ -16,17 +16,27 @@ local landfill_productivity_research = {
 	effects = {
 		{
 			type = "change-recipe-productivity",
-			recipe = "landfill",
+			recipe = "concrete",
+			change = 0.1
+		},
+		{
+			type = "change-recipe-productivity",
+			recipe = "refined-concrete",
+			change = 0.1
+		},
+		{
+			type = "change-recipe-productivity",
+			recipe = "concrete-from-molten-iron",
 			change = 0.1
 		}
 	},
 	prerequisites = {
-		"landfill",
-		"agricultural-science-pack",
+		"concrete",
+		"metallurgic-science-pack",
 		"space-science-pack"
 	},
 	unit = {
-		count_formula = "500 * (1.4 ^ (L - 1))",
+		count_formula = "1000 * (1.5 ^ (L - 1))",
 		ingredients = {
 			{"automation-science-pack", 1},
 			{"logistic-science-pack", 1},
@@ -34,12 +44,12 @@ local landfill_productivity_research = {
 			{"utility-science-pack", 1},
 			{"production-science-pack", 1},
 			{"space-science-pack", 1},
-			{"agricultural-science-pack", 1}
+			{"metallurgic-science-pack", 1}
 		},
-		time = 30
+		time = 45
 	},
 	max_level = "infinite",
 	upgrade = true
 }
 
-data:extend({landfill_productivity_research})
+data:extend({concrete_productivity_research})
