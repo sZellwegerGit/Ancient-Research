@@ -1,9 +1,9 @@
 local foundation_productivity_research = {
 	type = "technology",
-	name = "landfill-productivity",
+	name = "foundation-productivity",
 	icons = {
 		{
-			icon = "__space-age__/graphics/icons/foundation.png",
+			icon = "__space-age__/graphics/technology/foundation.png",
 			icon_size = 256
 		},
 		{
