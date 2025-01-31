@@ -1,6 +1,6 @@
 {
     "name": "AncientResearch",
-    "version": "0.0.1",
+    "version": "0.1.0",
     "title": "Ancient Research",
     "author": "DerLolli",
     "factorio_version": "2.0",
@@ -8,5 +8,5 @@
         "base", 
         "space-age"
     ],
-    "description": "This mod adds new ancient infinite researches."
+    "description": "This mod adds new infinite researches. This includes Landfill Productivity, Concrete Productivity, Foundation Productivity and Refinery Productivity. This mod should be more or less balanced"
 }

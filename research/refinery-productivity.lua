@@ -39,7 +39,8 @@ local refinery_productivity_research = {
 		"oil-processing",
 		"advanced-oil-processing",
 		"coal-liquefaction",
-		"electromagnetic-science-pack"
+		"electromagnetic-science-pack",
+		"metallurgic-science-pack"
 	},
 	unit = {
 		count_formula = "500 * (1.8 ^ (L - 1))",
@@ -50,7 +51,8 @@ local refinery_productivity_research = {
 			{"utility-science-pack", 1},
 			{"production-science-pack", 1},
 			{"space-science-pack", 1},
-			{"electromagnetic-science-pack", 1}
+			{"electromagnetic-science-pack", 1},
+			{"metallurgic-science-pack", 1},
 		},
 		time = 45
 	},
